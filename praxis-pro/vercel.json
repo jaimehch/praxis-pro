@@ -1,14 +1,14 @@
-{
+json{
   "version": 2,
   "buildCommand": "echo OK",
-  "outputDirectory": "praxis-pro/público",
+  "outputDirectory": "público",
   "functions": {
-    "praxis-pro/API/claude.js": {
+    "API/claude.js": {
       "runtime": "edge"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/praxis-pro/API/$1" },
-    { "source": "/(.*)",     "destination": "/praxis-pro/público/index.html" }
+    { "source": "/api/(.*)", "destination": "/API/$1" },
+    { "source": "/(.*)",     "destination": "/público/index.html" }
   ]
 }
