@@ -1,0 +1,32 @@
+/* ── PRAXIS Pro V9: estilos nuevos ─────────────────────────── */
+.ai-config-details{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;margin-bottom:20px;overflow:hidden}
+.ai-config-summary{padding:14px 20px;cursor:pointer;font-size:.86rem;font-weight:600;color:var(--ink2);list-style:none;display:flex;align-items:center;gap:8px}
+.ai-config-summary::-webkit-details-marker{display:none}
+.ai-config-details[open] .ai-config-summary{border-bottom:1px solid var(--border)}
+.ai-card-body{padding:20px}
+.v5-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+#v9-toast{position:fixed;bottom:24px;right:24px;background:var(--navy);color:white;padding:12px 20px;border-radius:10px;font-size:.85rem;font-weight:500;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9999}
+#v9-toast.visible{opacity:1}
+.ai-status{padding:10px 14px;border-radius:8px;font-size:.82rem;margin:8px 0;border:1.5px solid var(--border);display:none}
+.ai-status-ok{color:var(--green);background:#e8f5ee;border-color:var(--green);display:block!important}
+.ai-status-error{color:var(--accent);background:#fde8e8;border-color:var(--accent);display:block!important}
+.ai-status-show{color:var(--accent2);background:#e8f0ff;border-color:var(--accent2);display:block!important}
+/* Informe overlay */
+.informe-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;display:none;overflow-y:auto}
+.informe-overlay.visible{display:flex;align-items:flex-start;justify-content:center;padding:32px 16px}
+.informe-modal{background:white;max-width:820px;width:100%;border-radius:16px;overflow:hidden}
+.informe-q-num{background:var(--tag-bg);color:var(--ink2);font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:4px}
+.informe-art{font-size:.7rem;color:var(--muted)}
+/* Documentos IA tab */
+.docgen-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:28px}
+.docgen-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:20px 22px;transition:box-shadow .2s,transform .2s}
+.docgen-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+.docgen-card-icon{font-size:2rem;margin-bottom:10px}
+.docgen-card-title{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.docgen-card-sub{font-size:.8rem;color:var(--muted);margin-bottom:14px;line-height:1.5}
+.docgen-card-btn{width:100%;padding:10px 0;background:var(--accent);color:white;border:none;border-radius:8px;cursor:pointer;font-family:'Figtree',sans-serif;font-size:.83rem;font-weight:600;transition:opacity .2s}
+.docgen-card-btn:hover{opacity:.85}
+.docgen-card-btn:disabled{background:var(--muted);cursor:not-allowed}
+.docgen-progress{margin-top:12px;font-size:.78rem;color:var(--muted);min-height:20px}
+.docgen-status-bar{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:.84rem;color:var(--ink2);display:none}
+.docgen-status-bar.visible{display:block}
